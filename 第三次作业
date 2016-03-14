@@ -1,22 +1,22 @@
 
 
 
-line1 = {'L':' #          ','K':' #       # ','A':'        #        ','F':' #########  ','I':'  #####   ','i':'   ##          ##   '}
-line2 = {'L':' #          ','K':' #     #   ','A':'       # #       ','F':' #          ','I':'    #     ','i':' #     #     #    # '}
-line3 = {'L':' #          ','K':' #   #     ','A':'      #   #      ','F':' #          ','I':'    #     ','i':'#         #        #'}
-line4 = {'L':' #          ','K':' # #       ','A':'     #     #     ','F':' #########  ','I':'    #     ','i':'#                  #'}
-line5 = {'L':' #          ','K':' # #       ','A':'    #########    ','F':' #          ','I':'    #     ','i':' #                # '}
-line6 = {'L':' #          ','K':' #   #     ','A':'   #         #   ','F':' #          ','I':'    #     ','i':'   #            #   '}
-line7 = {'L':' #          ','K':' #     #   ','A':'  #           #  ','F':' #          ','I':'    #     ','i':'     #        #     '}
-line8 = {'L':' ########## ','K':' #       # ','A':' #             # ','F':' #          ','I':'  #####   ','i':'          #         '}
-line = [line1,line2,line3,line4,line5,line6,line7,line8]
-name=raw_input('What do you want to type?')    # let user to input character
-ii,jj=1,1         # loop var.
-while ii<=9 :     # this loop can display the charaters or some marks
+line1={'L':' #          ','K':' #       # ','A':'        #        ','F':' #########  ','I':'  #####   ','m':'   ##          ##   ',' ':'           '}
+line2={'L':' #          ','K':' #     #   ','A':'       # #       ','F':' #          ','I':'    #     ','m':' #     #     #    # ',' ':'           '}
+line3={'L':' #          ','K':' #   #     ','A':'      #   #      ','F':' #          ','I':'    #     ','m':'#         #        #',' ':'           '}
+line4={'L':' #          ','K':' # #       ','A':'     #     #     ','F':' #########  ','I':'    #     ','m':'#                  #',' ':'           '}
+line5={'L':' #          ','K':' # #       ','A':'    #########    ','F':' #          ','I':'    #     ','m':' #                # ',' ':'           '}
+line6={'L':' #          ','K':' #   #     ','A':'   #         #   ','F':' #          ','I':'    #     ','m':'   #            #   ',' ':'           '}
+line7={'L':' #          ','K':' #     #   ','A':'  #           #  ','F':' #          ','I':'    #     ','m':'     #        #     ',' ':'           '}
+line8={'L':' ########## ','K':' #       # ','A':' #             # ','F':' #          ','I':'  #####   ','m':'          #         ',' ':'           '}
+line=[line1,line2,line3,line4,line5,line6,line7,line8]
+name=raw_input('What do you want to type?')    # let the user to input characters
+i,j=1,1          # loop var
+while i<=9 :     # this loop can display the charaters or some marks
     line_print = ''
-    while jj<=len(name) :
-        line_print=line_print+line[ii-1][name[jj-1]]
-        jj=jj+1
+    while j<=len(name) :
+        line_print=line_print+line[i-1][name[j-1]]
+        j=j+1
     print line_print
-    jj=1         # reset the loop var.
-    ii=ii+1
+    j=1         # reset the loop var.
+    i=i+1
